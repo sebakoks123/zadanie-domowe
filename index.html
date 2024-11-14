@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog podróżniczy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Witaj </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Witaj znajdziesz tu info o podrozach.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Galeria zdjęć</h2>
+            <div class="gallery">
+                <img src="widok.jpg" alt="widok 1">
+                <img src="widok2.jpg" alt="widok 2">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contact-form">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Wyślij</button>
+            </form>
+            <p id="confirmation" class="hidden">Dziękuję za wiadomość!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sebastian Słodowy 4c</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
